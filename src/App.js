@@ -4,21 +4,21 @@ import {
   navBar,
   mainBody,
   about,
-  repos,
-  leadership,
-  skills,
-  getInTouch,
+  // repos,
+  // leadership,
+  // skills,
+  // getInTouch,
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
-import Project from "./components/home/Project";
+// import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Skills from "./components/home/Skills";
+// import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
-import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
+// import GetInTouch from "./components/home/GetInTouch.jsx";
+// import Leadership from "./components/home/Leadership.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -39,29 +39,29 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {repos.show && (
+      {/* {repos.show && (
         <Project
           heading={repos.heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
         />
-      )}
-      {leadership.show && (
+      )} */}
+      {/* {leadership.show && (
         <Leadership
           heading={leadership.heading}
           message={leadership.message}
           img={leadership.images}
           imageSize={leadership.imageSize}
         />
-      )}
-      {skills.show && (
+      )} */}
+      {/* {skills.show && (
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
         />
-      )}
+      )} */}
     </>
   );
 });
@@ -76,13 +76,13 @@ const App = () => {
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>
-        {getInTouch.show && (
+        {/* {getInTouch.show && (
           <GetInTouch
             heading={getInTouch.heading}
             message={getInTouch.message}
             email={getInTouch.email}
           />
-        )}
+        )} */}
       </Footer>
     </BrowserRouter>
   );
