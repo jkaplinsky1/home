@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Joshua",
   middleName: "Brian",
   lastName: "Kaplinsky",
-  message: " Changing the world, one <line \\> at a time. ",
+  message: " Changing the world, one <line /> at a time. ",
   icons: [
     {
       image: "fa-github",
